@@ -10,6 +10,9 @@ export const betterAuthClient = betterAuth({
     provider: "postgresql",
   }),
   trustedOrigins: [webClientUrl],
+  emailAndPassword: {
+    enabled: true,
+  },
   user: {
     modelName: "User",
   },
